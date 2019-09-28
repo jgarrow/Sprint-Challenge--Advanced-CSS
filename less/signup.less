@@ -1,0 +1,25 @@
+.container {
+    margin-top: @nav-height;
+    .flex-container(column, nowrap, center, center);
+}
+
+form {
+    font-size: 1.8rem;
+    .flex-container(column, nowrap, center, center);
+    line-height: 2;
+    .top-bottom-padding(1rem, 1rem);
+
+    input {
+        font-size: 1.6rem;
+        color: @main-font-color;
+        .form-styles(5px);
+        margin-bottom: 12px;
+        padding: 5px 10px;
+        // padding-left: 10px;
+        // padding-right: 10px;
+
+        &[type=submit] {
+            cursor: pointer; 
+        }
+    }
+}
