@@ -303,6 +303,23 @@ footer {
   width: 100px;
   text-align: center;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.home .walk .walk-text .btn:hover a {
+  color: #22283A;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F6F6F6;
+  width: 100%;
 }
 .home .walk .walk-img {
   width: 46%;

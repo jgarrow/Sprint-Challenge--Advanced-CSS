@@ -92,6 +92,23 @@
 
         &:hover {
           .button-styles(@button-color, @btn-bg-color, double, @footer-border, 100px);
+          cursor: pointer;
+
+          @media @phone {
+            width: 100%;
+            .top-bottom-padding(15px, 15px);
+          }
+
+          a {
+            color: @btn-bg-color;
+            cursor: pointer;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: @button-color;
+          width: 100%; 
         }
       }
     }
