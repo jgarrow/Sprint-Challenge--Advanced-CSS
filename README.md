@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    While both use media queries to set break points where the layout will change, adaptive sites still might have hard coded pixel sizings, even within the media queries. A fully responsive site will use more responsive units, like percents and rem.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first means that the design for mobile-sized screens was designed first. So the media queries for bigger screens will have `min-width` instead of `max-width`.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    `font-size: 62.5%` in the `html` tag is 16px. However, it makes the font size responsive, instead of fixed like 16px is. We still get the same effect with `rem` units, but everywhere where there are `rem` units is now just as responsive as where we initially set the `font-size: 62.5%`. We only need to change the font-size in one place and everywhere that has `rem` units will adjust accordingly. And since the font-size is a percent, it will adjust to different screen sizes better and be more accessible.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is a different syntax for the CSS that makes it more readable and organized for the developer. By using a compiler to convert the preprocessed CSS into "normal" CSS, the developer doesn't have to worry about that. Preprocessing also gives the developer access to more features, like the ability to create variables and pass those in as values for the different styling properties. This makes it much easier to change styles because you only have to change it in one place. You can also create style "blocks" and pass the whole block in instead of having to repeatedly write the same/similar styles multiple times. You can write the block once and reuse it, even passing in parameters if you want to make small changes. It makes the CSS more DRY and more readable and organized.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I love parametric mixins! During Preprocessing I, I was a bit frustrated with the mixins because I found myself making multiple different .flexbox() mixins. Then when we learned about parametric mixins, I only needed to make one and have parameters! It makes my CSS much more DRY. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
